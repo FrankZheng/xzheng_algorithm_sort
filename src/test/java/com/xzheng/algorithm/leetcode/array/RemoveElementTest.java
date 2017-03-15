@@ -28,6 +28,10 @@ public class RemoveElementTest extends BaseTestCase {
         assertEquals(3, RemoveElement.removeElement(ns, 2));
         assertArrayEquals(Arrays.asList(1,4,5,4,5), ns);
 
+        ns = new int[]{1,2,3,2,5};
+        assertEquals(3, RemoveElement.removeElement(ns, 2));
+        assertArrayEquals(Arrays.asList(1,3,5,2,5), ns);
+
 
     }
 }
